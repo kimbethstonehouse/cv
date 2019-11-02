@@ -1,0 +1,198 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\RequirePackage{fontawesome}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kimberley}{Stonehouse}{ \urlstyle{same}\href{mailto:kimbethstonehouse@gmail.com}{kimbethstonehouse@gmail.com} | +447932003660 \\
+\faGithub{ \href{https://github.com/kimbethstonehouse}{\bf kimbethstonehouse}}  |
+\faLinkedinSquare{ \href{https://www.linkedin.com/in/kimbethstonehouse/}{\bf kimbethstonehouse}} \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{The University \newline of Edinburgh}
+\descript{Computer Science BSc (Hons)}
+\location{2017 - 2021 | GPA 4.0}
+Penultimate year undergraduate student on track for a first class honours degree. \\
+\sectionsep
+
+\subsection{Prior Pursglove \newline Sixth Form}
+\location{2014 - 2016 | AAB}
+Studied further mathematics, mathematics and computing at A Level. Wrote an A grade Extended Project on cryptography. \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards}
+\descript{Edinburgh Award}
+\location{October 2019}
+An \href{https://www.ed.ac.uk/edinburgh-award}{\bf award} presented by the University. Awarded in recognition of my involvement in the Global Insights programme.
+\sectionsep
+
+\descript{Best Financial \newline Hack, BlackRock}
+\location{March 2019 | Hack the Burgh}
+Created \href{https://github.com/kimbethstonehouse/spenny}{\bf Spenny}, a smart budgeting application that uses ONS spending statistics, regional data and income deciles to create tailored budgets.
+\sectionsep
+
+\descript{Best Digital Receipt \newline Reader, Monzo}
+\location{January 2019 | Hack Cambridge}
+Created a \href{https://github.com/kimbethstonehouse/monzo-receipt-reader}{\bf receipt reader} that uses paper receipts to create itemised digital receipts and attach them to transactions in the Monzo app.
+\sectionsep
+
+\descript{Best Use of Cognitive \newline Services, Microsoft}
+\location{April 2018 | CopenHacks}
+Created \href{https://github.com/kimbethstonehouse/SprogGo}{\bf SprogGo}, an interactive language learning app that uses Microsoft's Computer Vision for image recognition.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Languages}
+Java \textbullet{} Python \textbullet{} C \textbullet{} JavaScript \textbullet{} 
+Haskell \\ Assembly (MIPS) \textbullet{} MATLAB \textbullet{} \LaTeX \\
+\sectionsep
+
+\subsection{Frameworks}
+React.js \textbullet{} Redux \textbullet{} NumPy \textbullet{} SciPy
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{JP Morgan Chase \& Co.}
+\descript{| Software Engineering Intern}
+\location{June 2019 - August 2019 | Glasgow, UK}
+Worked within the Global Cleared Derivatives Technology department as part of a small team responsible for the development of a new internal application. Full stack development using Java and React-Redux. Wrote both unit tests and integration tests and followed Agile practices. Attended workshops on technologies in use at the firm. Shadowed employees in different sectors of the firm to learn about finance and business.
+\sectionsep
+\sectionsep
+
+\runsubsection{The University of Edinburgh}
+\descript{| Tutor}
+\location{January 2019 – Present | Edinburgh, UK}
+Responsible for providing academic support to first and second year Informatics students. This takes the form of weekly tutorial sessions focusing on individual courses, and more generalised drop in helpdesk sessions covering all pre-honours courses, including mathematics, logic, various programming languages, machine learning, algorithms and data structures.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     INSIGHTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Insights}
+\runsubsection{Global Insights} \\
+\location{June 2019 | San Francisco, CA}
+Selected as a representative of the University, along with 6 others, to go and meet with Edinburgh alumni working in San Francisco. Over the course of 10 days, we met with 12 University alumni from 9 different organisations, including Google, Adobe, Salesforce and the University of California SF. Each alumni visit consisted of a combination of talks, tours and presentations, and provided an insight into the career path of the host following their graduation.
+\sectionsep
+\sectionsep
+
+\runsubsection{Amazon}
+\descript{| Early Insights}
+\location{April 2019 | Edinburgh, UK}
+One of 14 students invited to the Amazon Development Centre Scotland, where I attended workshops and talks about the company and their technologies. Participated in a three day hackathon to create an \href{https://github.com/kimbethstonehouse/asking-for-travel}{\bf Alexa skill}, working closely with an Amazon software engineer. Delivered a pitch on our product to Amazon employees.
+\sectionsep
+\sectionsep
+
+\runsubsection{Barclays}
+\descript{| Spring Intern}
+\location{April 2019 | Glasgow, UK}
+Attended workshops on voice biometrics, cloud services, big data, and applications of these technologies in the financial services sector. Participated in a group project that involved researching virtual reality technology, proposing ideas on how VR could be used to benefit Barclays, and presenting to a panel of senior employees.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACTIVITIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Activities} 
+\runsubsection{Informatics Ball}
+\descript{| Organiser}
+\location{January 2019 - Present | Edinburgh, UK}
+Responsible for budgeting, planning and organising CompSoc's annual Informatics Ball. CompSoc is Scotland's largest technology society and the largest society in the University.
+\sectionsep
+\sectionsep
+
+\subsection{Societies} \\
+CompSoc \textbullet{} EUSDC Skydiving \textbullet{} Hoppers (Women in Tech) \textbullet{} Programming Club
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
